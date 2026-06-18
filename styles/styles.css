@@ -1,0 +1,170 @@
+:root {
+    font-main: 'Montserrat', sans-serif;
+
+    --first-color: #1C2D5A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    padding-top: 48px;
+    margin-inline: 160px;
+    position: relative;
+    z-index: 10;
+    background: transparent;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;        
+    justify-content: space-between;
+    max-width: 1600px;   
+    width: 100%;   
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;    
+    gap: 430px;    
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.header__list-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--first-color);
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 64px;
+}
+
+.login__link,
+.signup__link {
+    display: inline-flex;
+    align-items: center;       
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    padding: 24px 48px;
+    border-radius: 40px; 
+    text-transform: uppercase;
+}
+
+.login__link {
+    border: 1px solid #39379F;
+    background-color: #39379F;
+    color: white;
+    width: 241px;
+    height: 68px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.login__link:hover {
+    background-color: var(--first-color);
+    opacity: 0.53;
+}
+
+.signup__link {
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    width: 151px;
+    height: 68px;
+}
+
+/* hero */
+
+.hero {
+    margin-top: -116px;  /* под шапку */
+    padding-top: 244px; 
+    padding-bottom: 60px;
+    background-image: url('../images/girl.png');
+    background-repeat: no-repeat;
+    background-position: right top; 
+    min-height: 75vh;
+}
+
+.hero__container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 75vh;
+}
+
+.hero__content {
+    max-width: 1035px;
+    width: 100%;
+    max-height: 567px;
+    height: 100%;
+}
+
+.hero__title {
+    max-width: 1035px;
+    max-height: 279px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero__title-top {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--first-color);
+    max-width: 889px;
+    width: 100%; 
+    height: 83px;
+    text-align: justify;     
+    text-align-last: justify;
+    
+}
+
+.hero__title-middle {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, rgba(249, 158, 74, 0.91), #F0C342); /* задаем градиент */
+    -webkit-background-clip: text; /* обрезаем фон по форме букв */
+    background-clip: text; /* для остальных браузеров */
+    -webkit-text-fill-color: transparent;  /* делаем буквы прозрачными */
+    color: transparent; /*страховка если первый не сработает */
+    align-self: flex-end;
+    display: block; 
+    text-align: justify;
+}
+
+.hero__title-bottom {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent; 
+    -webkit-text-stroke: 1px #A8AFC0;
+    display: block; 
+    text-align: justify;
+}
