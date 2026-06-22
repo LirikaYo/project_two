@@ -1240,64 +1240,101 @@ body {
     width: 24px;
     height: 76px;
     left: 445px;
-    top: 456px;
+    top: 256px;
 }
 
 .decor_two {
     width: 24px;
     height: 76px;
     right: 373px;
-    top: 347px;
+    top: 256px;
 }
 
 .decor_three {
     width: 61px;
     height: 61px;
+    left: 162px;
+    top: 221px;
 }
 
 .decor_four {
     width: 38px;
     height: 38px;
+    left: 181px;
+    top: 936px;
 }
 
 .decor_five {
     width: 50px;
     height: 50px;
+    right: 186px;
+    top: 720px;
 }
 
 .decor_six {
     width: 61px;
     height: 61px;
+    right: 325px;
+    top: 1197px
 }
 
 .decor_eight {
     width: 24px;
     height: 76px;
+    left: 160px;
+    top: 1376px;
 }
 
 .decor_nine {
     width: 61px;
     height: 61px;
+    left: 876px;
+    top: 2003px
 }
 
 .decor_ten {
     width: 24px;
     height: 76px;
+    right: 160px;
+    bottom: 1296px;
 }
 
 .decor_eleven {
     width: 24px;
     height: 76px;
+    left: 842px;
+    bottom: 609px;
 }
 
 .decor_twelve {
     width: 61px;
     height: 61px;
+    right: 107px;
+    bottom: 603px;
 }
 
 .decor_thirteen {
     width: 24px;
     height: 76px;
+    left: 559px;
+    bottom: 97px;
+}
+
+.decor_blur-orange {
+    /* Точные размеры из Figma */
+    width: 779px;
+    height: 719px;
+    
+    /* Точные глобальные координаты из Figma */
+    top: 754px;
+    left: -524px;
+    
+    /* Задаем цвет #F3CEBD с альфа-прозрачностью 25% (0.25) */
+    background-color: rgba(245, 206, 128, 0.45);
+    border-radius: 50%; /* Превращаем блок в овал */
+    
+    /* Эффект размытия Layer blur: 200 из Figma */
+    filter: blur(200px); 
 }
 
 /* PARTNER */
